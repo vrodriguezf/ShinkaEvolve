@@ -91,13 +91,7 @@ evo_config = EvolutionConfig(
     job_type="local",
     language="python",
     llm_models=[
-        "gemini-2.5-pro",
-        "gemini-2.5-flash",
-        "bedrock/us.anthropic.claude-sonnet-4-20250514-v1:0",
-        "o4-mini",
-        "gpt-5",
-        "gpt-5-mini",
-        "gpt-5-nano",
+        "Qwen/Qwen3-14B-AWQ#http://localhost:8001/v1",
     ],
     llm_kwargs=dict(
         temperatures=[0.0, 0.5, 1.0],

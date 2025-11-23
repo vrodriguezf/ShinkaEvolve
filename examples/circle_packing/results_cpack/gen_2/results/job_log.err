@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\Merequetengue\Documents\github\GTOC\ShinkaEvolveLocal\examples\circle_packing\evaluate.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'

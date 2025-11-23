@@ -118,6 +118,14 @@ OPENAI_MODELS = {
         "input_price": 0.05 / M,
         "output_price": 0.4 / M,
     },
+    "gpt-5.1": {
+        "input_price": 1.25 / M,
+        "output_price": 10.0 / M,
+    },
+    "gpt-5.1-codex": {
+        "input_price": 1.25 / M,
+        "output_price": 10.0 / M,
+    },
 }
 
 
@@ -205,3 +213,10 @@ REASONING_BEDROCK_MODELS = [
     "bedrock/us.anthropic.claude-3-7-sonnet-20250219-v1:0",
     "bedrock/us.anthropic.claude-sonnet-4-20250514-v1:0",
 ]
+
+LOCAL_MODELS = {
+    "Qwen/Qwen3-14B-AWQ": {
+        "input_price": 0 / M,
+        "output_price": 0 / M,
+    },
+}

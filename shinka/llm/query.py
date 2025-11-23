@@ -14,12 +14,14 @@ from .models.pricing import (
     REASONING_GEMINI_MODELS,
     REASONING_AZURE_MODELS,
     REASONING_BEDROCK_MODELS,
+    LOCAL_MODELS,
 )
 from .models import (
     query_anthropic,
     query_openai,
     query_deepseek,
     query_gemini,
+    query_local_qwen3_14b_vllm,
     QueryResult,
 )
 import logging
@@ -204,6 +206,8 @@ def query(
         query_fn = query_deepseek
     elif model_name in GEMINI_MODELS.keys():
         query_fn = query_gemini
+    elif model_name in LOCAL_MODELS.keys():
+        query_fn = query_local_qwen3_14b_vllm
     else:
         raise ValueError(f"Model {model_name} not supported.")
     result = query_fn(
